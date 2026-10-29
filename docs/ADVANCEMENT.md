@@ -28,3 +28,14 @@ Current work: navigation history, document outline foundation, and understandabl
 Implemented in the development branch: optional live document outline with heading jumps and level-gap indicators; session Back/Forward history with Alt Left/Right and deleted-document skipping; backup freshness and availability guidance. Outline visibility is remembered. History resets when accepting a library to avoid crossing library boundaries. This is not the complete roadmap or an updated installer.
 
 Verification: 63 unit checks passed, production build succeeded, and isolated Electron checks passed for live outline updates, heading warnings, cursor placement and Back/Forward document navigation. Outstanding: outline collapse/reorder, recent locations and mouse history buttons, scheduled backups and the rest of the roadmap.
+
+## Development progress — outline and navigation controls
+
+- Added outline descendant collapsing (outline only; draft text remains visible).
+- Added sibling section movement carrying rich content and subsections, with isolated Undo history. Nested headings inside tables/lists stay navigable but cannot be moved here.
+- Added current-heading indication and contextual move controls accessible by keyboard.
+- Added the last 20 distinct session locations and mouse Back/Forward support. Re-selecting the current location does not discard the next navigation entry.
+- Added Escape and focus-out dismissal for recent locations.
+- Updated existing offline lessons and both generated user guides.
+- Validation: 64 unit tests; production build; isolated Electron checks for live heading updates, collapse/expand, section movement/Undo, recent locations, and mouse navigation; existing full desktop regression suite passed.
+- Installer/release 0.1 remains unchanged. Remaining roadmap items are still open, including editor text folding, export preflight, saved layouts, deeper review/research, backup scheduling, performance, accessibility and updates.

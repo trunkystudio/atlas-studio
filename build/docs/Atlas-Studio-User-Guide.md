@@ -129,9 +129,10 @@ Understand the title bar, sidebar, main area and optional panels.
 
 1. Use the Atlas Studio name/logo at the top left to open the application menu. It contains import, library, backup, preferences and help actions.
 2. Choose a project or document in the left sidebar. The main area displays your writing or the selected workspace view.
-3. Use the top toolbar for Writing tools, search, focus, details, Export and New. Hover an icon for its name; keyboard focus also reveals an outline.
-4. Open the details panel only when needed. Drag the sidebar separator to resize it, or focus the separator and use arrow keys. Preferences retain your panel choices.
-5. Use the window controls to minimize, maximize/restore or close Atlas. Closing waits for saving; if saving fails, Atlas offers ways to keep or rescue your draft.
+3. Use Back and Forward above the workspace, Alt Left/Right, or mouse navigation buttons to revisit locations. Recent locations offers the last 20 distinct entries from this session. Opening another library resets the navigation history.
+4. Use the top toolbar for Writing tools, search, focus, details, Export and New. Hover an icon for its name; keyboard focus also reveals an outline.
+5. Open the details panel only when needed. Drag the sidebar separator to resize it, or focus the separator and use arrow keys. Preferences retain your panel choices.
+6. Use the window controls to minimize, maximize/restore or close Atlas. Closing waits for saving; if saving fails, Atlas offers ways to keep or rescue your draft.
 
 **What you should see:** One sidebar and one main work area keep navigation predictable.
 
@@ -233,11 +234,13 @@ Format a passage without a crowded permanent ribbon.
 
 **Where:** Writing editor; toolbar near selected text
 
-1. Click the draft and type. Select a passage to reveal bold, italic, underline, highlight, comment, link and list controls beside it.
-2. Use Paragraph style above the editor for paragraph or heading levels 1–3. Headings also build the outline in document details.
-3. Use Insert for bullet/numbered lists, checklists, quotes, code blocks, dividers, tables, images, links and equations.
-4. Use Ctrl B / Ctrl I for common formatting and the undo/redo buttons for editor changes. Word and character counts appear below the draft.
-5. Right-click a misspelled word for local suggestions or Add to personal dictionary. Set the language in Language & accessibility.
+1. Choose Outline in the editor toolbar to show headings. Select a heading to place the cursor there. A warning marks skipped heading levels. Collapse hides descendant headings in the outline, without hiding or changing the writing.
+2. Hover or focus an outline row for Move up/down controls. A move includes its text, images and all subsections, and can be undone in one step. Moves stay among sibling headings; headings nested inside tables or lists cannot be moved here.
+3. Click the draft and type. Select a passage to reveal bold, italic, underline, highlight, comment, link and list controls beside it.
+4. Use Paragraph style above the editor for paragraph or heading levels 1–3. Headings also build the outline in document details.
+5. Use Insert for bullet/numbered lists, checklists, quotes, code blocks, dividers, tables, images, links and equations.
+6. Use Ctrl B / Ctrl I for common formatting and the undo/redo buttons for editor changes. Word and character counts appear below the draft.
+7. Right-click a misspelled word for local suggestions or Add to personal dictionary. Set the language in Language & accessibility.
 
 **What you should see:** Your draft has readable structure with formatting close to the text.
 
@@ -993,10 +996,11 @@ Protect the complete library and test the recovery path.
 **Where:** Writing tools → Backup & recovery
 
 1. Review missing attachments, free space, revision/daily checkpoint counts and recorded complete backups.
-2. Choose Create verified backup and save a .folio archive, preferably on a separate drive. It contains writing, events, references, attachments, annotations, history, templates, indexes and imported styles.
-3. Choose Preview a backup and select the archive. Atlas verifies it and shows the contents before you commit to restoration.
-4. Choose Restore separate copy only when you want to open a new restored library. The current library remains on disk, and the archive is checked again for changes.
-5. Review the restored writing and source files. Use Choose library folder when returning to another saved library.
+2. The health message identifies missing files, no available complete backup, or an archive older than seven days. Archive availability is not a new integrity check: use Preview a backup to verify its current contents.
+3. Choose Create verified backup and save a .folio archive, preferably on a separate drive. It contains writing, events, references, attachments, annotations, history, templates, indexes and imported styles.
+4. Choose Preview a backup and select the archive. Atlas verifies it and shows the contents before you commit to restoration.
+5. Choose Restore separate copy only when you want to open a new restored library. The current library remains on disk, and the archive is checked again for changes.
+6. Review the restored writing and source files. Use Choose library folder when returning to another saved library.
 
 **What you should see:** A portable, verified copy can recover more than the current text document.
 

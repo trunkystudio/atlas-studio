@@ -12,6 +12,7 @@ lesson('welcome','start','Your first session','Choose a starting point for any k
 lesson('workspace','start','Find your way around','Understand the title bar, sidebar, main area and optional panels.','The main Atlas window',[
 'Use the Atlas Studio name/logo at the top left to open the application menu. It contains import, library, backup, preferences and help actions.',
 'Choose a project or document in the left sidebar. The main area displays your writing or the selected workspace view.',
+'Use Back and Forward above the workspace, Alt Left/Right, or mouse navigation buttons to revisit locations. Recent locations offers the last 20 distinct entries from this session. Opening another library resets the navigation history.',
 'Use the top toolbar for Writing tools, search, focus, details, Export and New. Hover an icon for its name; keyboard focus also reveals an outline.',
 'Open the details panel only when needed. Drag the sidebar separator to resize it, or focus the separator and use arrow keys. Preferences retain your panel choices.',
 'Use the window controls to minimize, maximize/restore or close Atlas. Closing waits for saving; if saving fails, Atlas offers ways to keep or rescue your draft.'
@@ -49,6 +50,8 @@ lesson('tabs','writing','Document tabs and reading memory','Switch drafts withou
 'Return to a draft to restore cursor/selection and scroll. The PDF reader remembers its own page and zoom.'
 ],'You can move between drafts and sources while keeping your position.',['The sidebar pin/filter is a bookmark for writing; tab pinning controls the open tab strip.'],[],view('writing'),['018','061','091','135']);
 lesson('format','writing','Writing and selection formatting','Format a passage without a crowded permanent ribbon.','Writing editor; toolbar near selected text',[
+'Choose Outline in the editor toolbar to show headings. Select a heading to place the cursor there. A warning marks skipped heading levels. Collapse hides descendant headings in the outline, without hiding or changing the writing.',
+'Hover or focus an outline row for Move up/down controls. A move includes its text, images and all subsections, and can be undone in one step. Moves stay among sibling headings; headings nested inside tables or lists cannot be moved here.',
 'Click the draft and type. Select a passage to reveal bold, italic, underline, highlight, comment, link and list controls beside it.',
 'Use Paragraph style above the editor for paragraph or heading levels 1–3. Headings also build the outline in document details.',
 'Use Insert for bullet/numbered lists, checklists, quotes, code blocks, dividers, tables, images, links and equations.',
@@ -264,6 +267,7 @@ lesson('saving','protect','Autosave, conflicts and safe closing','Understand whe
 ],'The save indicator reflects success, and failure leaves choices for recovery.',['Avoid editing library JSON outside Atlas while it is open.','Revision history, daily checkpoints and full backups serve different purposes.'],['Unexpected OS shutdown/storage failure is not a substitute for a second-drive backup.'],{type:'menu'},['103','104','105','106','130']);
 lesson('backup','protect','Backup health, preview and restoration','Protect the complete library and test the recovery path.','Writing tools → Backup & recovery',[
 'Review missing attachments, free space, revision/daily checkpoint counts and recorded complete backups.',
+'The health message identifies missing files, no available complete backup, or an archive older than seven days. Archive availability is not a new integrity check: use Preview a backup to verify its current contents.',
 'Choose Create verified backup and save a .folio archive, preferably on a separate drive. It contains writing, events, references, attachments, annotations, history, templates, indexes and imported styles.',
 'Choose Preview a backup and select the archive. Atlas verifies it and shows the contents before you commit to restoration.',
 'Choose Restore separate copy only when you want to open a new restored library. The current library remains on disk, and the archive is checked again for changes.',
