@@ -1,0 +1,4 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import fs from 'node:fs';
+export default defineConfig({ base: './', plugins: [react(),{name:'local-pdf-resources',closeBundle(){for(const folder of ['cmaps','standard_fonts','wasm'])fs.cpSync('node_modules/pdfjs-dist/'+folder,'dist/pdf-resources/'+folder,{recursive:true});fs.mkdirSync('dist/ocr/core',{recursive:true});fs.copyFileSync('node_modules/tesseract.js/dist/worker.min.js','dist/ocr/worker.min.js');for(const file of fs.readdirSync('node_modules/tesseract.js-core').filter(f=>f.includes('.wasm')))fs.copyFileSync('node_modules/tesseract.js-core/'+file,'dist/ocr/core/'+file);fs.cpSync('build/ocr/lang','dist/ocr/lang',{recursive:true});fs.cpSync('build/dictionaries','dist/dictionaries',{recursive:true});}}], build: {outDir: 'dist'} });

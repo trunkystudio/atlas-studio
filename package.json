@@ -1,0 +1,109 @@
+{
+  "name": "atlas-studio",
+  "version": "0.1.0",
+  "description": "Atlas Studio — a private, connected writing and research workspace.",
+  "author": "Trunky Studio",
+  "license": "MIT",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run guide && vite build",
+    "start": "electron .",
+    "test": "node --test tests/*.test.cjs",
+    "dist": "npm run build && electron-builder --win nsis --x64",
+    "pack": "npm run build && electron-builder --win dir --x64",
+    "notices": "node scripts/licenses.cjs",
+    "guide": "node scripts/build-guide.cjs"
+  },
+  "dependencies": {
+    "@tiptap/extension-highlight": "2.27.3",
+    "@tiptap/extension-image": "2.27.3",
+    "@tiptap/extension-link": "2.27.3",
+    "@tiptap/extension-placeholder": "2.27.3",
+    "@tiptap/extension-table": "2.27.3",
+    "@tiptap/extension-table-cell": "2.27.3",
+    "@tiptap/extension-table-header": "2.27.3",
+    "@tiptap/extension-table-row": "2.27.3",
+    "@tiptap/extension-task-item": "2.27.3",
+    "@tiptap/extension-task-list": "2.27.3",
+    "@tiptap/extension-underline": "2.27.3",
+    "@tiptap/react": "2.27.3",
+    "@tiptap/starter-kit": "2.27.3",
+    "citeproc": "2.4.63",
+    "diff": "9.0.0",
+    "docx": "^9.5.1",
+    "dompurify": "^3.3.1",
+    "htmlparser2": "^12.0.0",
+    "jszip": "^3.10.1",
+    "katex": "^0.16.27",
+    "lucide-react": "^0.577.0",
+    "mammoth": "^1.12.0",
+    "marked": "^15.0.12",
+    "pdfjs-dist": "^6.4.299",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sanitize-html": "^2.17.0",
+    "tesseract.js": "7.0.0",
+    "turndown": "^7.2.2",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "electron": "45.1.0",
+    "electron-builder": "26.18.0",
+    "playwright-core": "^1.58.2",
+    "vite": "^6.4.1"
+  },
+  "build": {
+    "appId": "studio.trunky.folio",
+    "productName": "Atlas Studio",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "build/icon.ico",
+      "LICENSE.txt",
+      "README.md",
+      "package.json",
+      "build/THIRD-PARTY-LICENSES.txt",
+      "!node_modules/@tiptap/**/*",
+      "!node_modules/react/**/*",
+      "!node_modules/react-dom/**/*",
+      "!node_modules/lucide-react/**/*",
+      "!node_modules/dompurify/**/*",
+      "!node_modules/pdfjs-dist/**/*",
+      "build/csl/**/*",
+      "!node_modules/tesseract.js/**/*",
+      "!node_modules/tesseract.js-core/**/*",
+      "build/licenses/**/*",
+      "build/RESOURCE-SOURCES.json",
+      "build/docs/**/*"
+    ],
+    "asar": true,
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": true,
+      "artifactName": "Atlas-Studio-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Atlas Studio",
+      "deleteAppDataOnUninstall": false,
+      "license": "LICENSE.txt"
+    },
+    "compression": "maximum",
+    "extraResources": [
+      {
+        "from": "native/speech-pack",
+        "to": "speech"
+      }
+    ]
+  }
+}

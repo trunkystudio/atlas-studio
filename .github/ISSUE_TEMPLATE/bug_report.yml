@@ -1,0 +1,21 @@
+name: Bug report
+description: Report a problem in Atlas Studio
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+  - type: input
+    id: version
+    attributes:
+      label: Atlas Studio and Windows versions
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or logs without private information

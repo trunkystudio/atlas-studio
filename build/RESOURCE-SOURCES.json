@@ -1,0 +1,462 @@
+{
+  "origins": [
+    {
+      "component": "whisper.cpp 1.9.5 b5454 Windows x64",
+      "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-bin-x64.zip",
+      "archiveSHA256": "6ba69e3482d7826214f90a6a9c84ca07782aec1e1d0c6a7c30c994fd5d816ccb",
+      "license": "MIT"
+    },
+    {
+      "component": "Whisper Small multilingual Q5_1",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/c521a4b02f422512d734391fdf08bb08c0862f68/ggml-small-q5_1.bin",
+      "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb",
+      "license": "MIT"
+    },
+    {
+      "component": "Electron 45.1.0 Hunspell dictionaries",
+      "url": "https://github.com/electron/electron/releases/download/v45.1.0/hunspell_dictionaries.zip",
+      "archiveSHA256": "9fe45fc5b34e9887d09dcfca73c7f75f5c849e84faa9322e823ed8c7a9a955d3",
+      "license": "Retained COPYING* notices"
+    },
+    {
+      "component": "OCR trained data English/French/Arabic",
+      "url": "https://github.com/naptha/tessdata/tree/gh-pages/4.0.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "component": "CSL styles and locales",
+      "urls": [
+        "https://github.com/citation-style-language/styles",
+        "https://github.com/citation-style-language/locales"
+      ],
+      "license": "CC-BY-SA-3.0; per-file authors and rights retained"
+    }
+  ],
+  "files": [
+    {
+      "path": "build/csl/apa.csl",
+      "bytes": 85817,
+      "sha256": "3917def5fc951b104d64216c3373096042368b9704ba269ca83c14ebaba889fc"
+    },
+    {
+      "path": "build/csl/chicago-notes-bibliography.csl",
+      "bytes": 242663,
+      "sha256": "4b6be4bceaf8f3c31b49331c9f9e38c977f666d6ab80e19a2ac8482c7511abeb"
+    },
+    {
+      "path": "build/csl/ieee.csl",
+      "bytes": 17587,
+      "sha256": "b4c7619fc16c45a31e4cc3271eab94ffe83192d3b4c7fc729470a3b459448de3"
+    },
+    {
+      "path": "build/csl/locales-ar.xml",
+      "bytes": 25850,
+      "sha256": "d25602b8b39497bef229b8aaa75ae92b34a529bed7f55b5367e4a26c99611319"
+    },
+    {
+      "path": "build/csl/locales-en-US.xml",
+      "bytes": 32649,
+      "sha256": "ac864c7c21166b4390d82c31792cdc509400727fa0060b43d8aa17e07f9cb079"
+    },
+    {
+      "path": "build/csl/locales-fr-FR.xml",
+      "bytes": 31110,
+      "sha256": "bd6820660e6a4dab73bfd48df7348320708263b413c06fdd2e5445bcdf788bfb"
+    },
+    {
+      "path": "build/csl/modern-language-association.csl",
+      "bytes": 44381,
+      "sha256": "e1432698ef28938d044b06bd45ddcc57d6b974cec25f71007075646a11f99484"
+    },
+    {
+      "path": "build/ocr/lang/ara.traineddata.gz",
+      "bytes": 1673749,
+      "sha256": "400ab30fe4f4c4a03feeabe0779a7122cee6aa4fffb1629bb5b1671942859c9e"
+    },
+    {
+      "path": "build/ocr/lang/eng.traineddata.gz",
+      "bytes": 10923060,
+      "sha256": "ed350f3752f81ee8f38769edc14d92d997dababe23b565c59879372cc46a2468"
+    },
+    {
+      "path": "build/ocr/lang/fra.traineddata.gz",
+      "bytes": 6279601,
+      "sha256": "1c0916fac2dbd6f121ca8a57a92f08e4a119227602c7c984da986222eab6cd3b"
+    },
+    {
+      "path": "build/dictionaries/af-ZA-3-0.bdic",
+      "bytes": 2100027,
+      "sha256": "b1cef1b6548dfefb9ba96e01e35db096b2c15e052ff7a32ca431f20b7819879e"
+    },
+    {
+      "path": "build/dictionaries/bg-BG-3-0.bdic",
+      "bytes": 1057506,
+      "sha256": "a25f46ea7b44951b23432b90a86f8bdd4b5eada215d765749213219b261017b5"
+    },
+    {
+      "path": "build/dictionaries/ca-ES-3-0.bdic",
+      "bytes": 1156964,
+      "sha256": "e03b0f6b4f1926e43eef08d6984915fe2615afe81c0fedb5c6b30671c0580504"
+    },
+    {
+      "path": "build/dictionaries/COPYING",
+      "bytes": 108204,
+      "sha256": "cde91164e09e33e94e1db4529aa77f89bc0c392b1ed138d689c66dfbd11d9701"
+    },
+    {
+      "path": "build/dictionaries/COPYING.Apache",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "build/dictionaries/COPYING.GPL3",
+      "bytes": 35148,
+      "sha256": "0ae0485a5bd37a63e63603596417e4eb0e653334fa6c7f932ca3a0e85d4af227"
+    },
+    {
+      "path": "build/dictionaries/COPYING.LESSER",
+      "bytes": 7795,
+      "sha256": "d7137682540000e5f57ff3cb0b4943b66aa3ac4ecca28614ce46991fc291bd15"
+    },
+    {
+      "path": "build/dictionaries/COPYING.LGPL",
+      "bytes": 26532,
+      "sha256": "5bbcbb737e60fe9deba08ecbd00920cfcc3403ba2e534c64fdeea49d6bb87509"
+    },
+    {
+      "path": "build/dictionaries/COPYING.MIT",
+      "bytes": 1736,
+      "sha256": "379ddd904c597d64e11a88bba68663f59501c9fa59e8124c0f4f32a67a5dc77a"
+    },
+    {
+      "path": "build/dictionaries/COPYING.MPL",
+      "bytes": 25755,
+      "sha256": "53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f"
+    },
+    {
+      "path": "build/dictionaries/cs-CZ-3-0.bdic",
+      "bytes": 3108527,
+      "sha256": "fd31ba12d939c43cc71d5a00441df9bace5edcdeca735ade0e84e5f10cd410d6"
+    },
+    {
+      "path": "build/dictionaries/cy-GB-1-0.bdic",
+      "bytes": 490804,
+      "sha256": "58b4bbc81f418ff81926b4d323ea8c2aa100ae8905f151116e1dff68b22314f2"
+    },
+    {
+      "path": "build/dictionaries/da-DK-3-0.bdic",
+      "bytes": 970965,
+      "sha256": "265ce85a15f2e470f7cf4bbefba0b457327af813e444f63c652f666e67de459f"
+    },
+    {
+      "path": "build/dictionaries/de-DE-3-0.bdic",
+      "bytes": 6811094,
+      "sha256": "076a470700dbd0aa62bb8b3d24c34e1340bdfe83cbbcfc035ce972f23c140400"
+    },
+    {
+      "path": "build/dictionaries/el-GR-3-0.bdic",
+      "bytes": 6452802,
+      "sha256": "240777a5decb51a1d22756401d8c0155e094d39ba92360aafaaff73a1cbd328c"
+    },
+    {
+      "path": "build/dictionaries/en-AU-10-2.bdic",
+      "bytes": 453801,
+      "sha256": "13427b9828773291cde00ba266a58fd5110ba6f1d4b29ed86b49f4b3afdf0a39"
+    },
+    {
+      "path": "build/dictionaries/en-CA-10-2.bdic",
+      "bytes": 451827,
+      "sha256": "4e0ab8e315fff2c7db23476e08a287088005912a08d9d5a2efc601699b7d34a8"
+    },
+    {
+      "path": "build/dictionaries/en-GB-10-2.bdic",
+      "bytes": 452008,
+      "sha256": "e014c23d2215f093205343b9b8805e17c8d8e115d314d93fd5ba51eadf05cff2"
+    },
+    {
+      "path": "build/dictionaries/en-GB-oxendict-10-2.bdic",
+      "bytes": 451953,
+      "sha256": "e01c756792d6e7a0bd62bfa5c0264d42971b479865aecc204463146909300e1c"
+    },
+    {
+      "path": "build/dictionaries/en-US-10-2.bdic",
+      "bytes": 451982,
+      "sha256": "b0d80e6b6c5491879365e176ecbd98074602a663429bcfcfb0a5a8375c051f13"
+    },
+    {
+      "path": "build/dictionaries/es-ES-3-0.bdic",
+      "bytes": 785066,
+      "sha256": "e6334dcf080aaeca679db70565762a2c296ff5780c1af263530ac7345736bfa9"
+    },
+    {
+      "path": "build/dictionaries/et-EE-3-0.bdic",
+      "bytes": 2458725,
+      "sha256": "282c6ba4a34740dd06bb37de88b7950c8979096bf62cd4e648f1121c86b1d428"
+    },
+    {
+      "path": "build/dictionaries/fa-IR-9-0.bdic",
+      "bytes": 1044412,
+      "sha256": "8c0084622b9ec19f9bb4a024e3df497ecc615a33a095f2e0a5db9eb7a1655031"
+    },
+    {
+      "path": "build/dictionaries/fo-FO-3-0.bdic",
+      "bytes": 1537517,
+      "sha256": "4118aa699106e2a725af1464aaa72f066a8890f3d452ed3c8a9f755e49afb7d4"
+    },
+    {
+      "path": "build/dictionaries/fr-FR-3-0.bdic",
+      "bytes": 1074744,
+      "sha256": "6cffc13b549c33d44180a3a7b13943fe0eadfbe80bcdbccc76f67c55c2012968"
+    },
+    {
+      "path": "build/dictionaries/gl-1-0.bdic",
+      "bytes": 2252121,
+      "sha256": "15414fc4ff97e7119dbcfe536b5d509fd99f6ffa7ee43e988d9db8ca8f64c805"
+    },
+    {
+      "path": "build/dictionaries/he-IL-3-0.bdic",
+      "bytes": 2272411,
+      "sha256": "66e9d835e9f40601a46ed5fe1a671a22f7c3440b39d6cb154648681230b7f638"
+    },
+    {
+      "path": "build/dictionaries/hi-IN-3-0.bdic",
+      "bytes": 223868,
+      "sha256": "7b1eb10f38f57a4638fdb1a9f08fe0765b5791c23ebeec6f5f28de32e4886f9b"
+    },
+    {
+      "path": "build/dictionaries/hr-HR-3-0.bdic",
+      "bytes": 1588645,
+      "sha256": "2c412f41b48c80ab8bb04705c6aece9ca0d39f4a5cb1b5098708ca29477c9b60"
+    },
+    {
+      "path": "build/dictionaries/hu-HU-3-0.bdic",
+      "bytes": 2784888,
+      "sha256": "9d4462fa6a49f742b02ce0291033b7df71ccfbe6b23dabaa5513d3b66dbd3be9"
+    },
+    {
+      "path": "build/dictionaries/hy-1-0.bdic",
+      "bytes": 2191121,
+      "sha256": "f6d306587c69cdb1231f44300b0426cc96c5262ee29d7e490af6623f3e56d585"
+    },
+    {
+      "path": "build/dictionaries/id-ID-3-0.bdic",
+      "bytes": 231105,
+      "sha256": "3726e15a96fcba6d54302386de742c011af68b2de491f099bbf917fc23fd74af"
+    },
+    {
+      "path": "build/dictionaries/it-IT-3-0.bdic",
+      "bytes": 983219,
+      "sha256": "8b83a0d4bba4cfcd4a4e7ee89b703014a00a5c08e721e568a5c552a732827fff"
+    },
+    {
+      "path": "build/dictionaries/ko-3-0.bdic",
+      "bytes": 11476456,
+      "sha256": "75b5e033a0d6e1bba1e7ce6aad6f723d84128cda7f2048339c8c498f049f49bc"
+    },
+    {
+      "path": "build/dictionaries/LICENSE",
+      "bytes": 108158,
+      "sha256": "d63c6240d6f6330a025aade63d317d7ff04f95fc3325fe6aea3848ca452f64ea"
+    },
+    {
+      "path": "build/dictionaries/lt-LT-3-0.bdic",
+      "bytes": 917849,
+      "sha256": "ab581380a130cfc8601556264370510e104a08ac4326daa132e93528e6784710"
+    },
+    {
+      "path": "build/dictionaries/lv-LV-3-0.bdic",
+      "bytes": 1828731,
+      "sha256": "6229b4090600e584d06f826b7efb55f338e14cb653779386d4b6feb4d9716667"
+    },
+    {
+      "path": "build/dictionaries/nb-NO-3-0.bdic",
+      "bytes": 1534513,
+      "sha256": "14b5601cbccb6b270ccc421cb687dc490ecb3ad96ffc2bb8bc4ebee5d379168f"
+    },
+    {
+      "path": "build/dictionaries/nl-NL-3-0.bdic",
+      "bytes": 1807935,
+      "sha256": "43eea1bd8149c1a24f4388ade6a261a981ca2e786e7df12e606295a8024b150e"
+    },
+    {
+      "path": "build/dictionaries/pl-PL-3-0.bdic",
+      "bytes": 3233589,
+      "sha256": "a04c51759b6e54f01e628dfc6354ca88a0711d8bcefa6a8c0e8baa04156fb92e"
+    },
+    {
+      "path": "build/dictionaries/pt-BR-3-0.bdic",
+      "bytes": 3923495,
+      "sha256": "6b2850f5a54994a5204a9a88d4b586e9d4e028a0360b67352b04cffdb2a3e0ea"
+    },
+    {
+      "path": "build/dictionaries/pt-PT-3-0.bdic",
+      "bytes": 407258,
+      "sha256": "a6dfc3332b15a6cdf06be3f28024f22e40e0467cf0400f8ce9c43cf1af2c3f40"
+    },
+    {
+      "path": "build/dictionaries/ro-RO-3-0.bdic",
+      "bytes": 1478687,
+      "sha256": "0db54e3f28291d0fd28f049a61a76ade5a98591b6ae16cb7113e2561b0760ec4"
+    },
+    {
+      "path": "build/dictionaries/ru-RU-3-0.bdic",
+      "bytes": 2309618,
+      "sha256": "92dcc64fb0b0c065b443abf9de6fb58116b2a64c49427d3715fa7536ad1c53b8"
+    },
+    {
+      "path": "build/dictionaries/sh-3-0.bdic",
+      "bytes": 1473320,
+      "sha256": "63659ba6cf76c11f3637d04c5e19bd53c586083d76379a887f8f3317885eaead"
+    },
+    {
+      "path": "build/dictionaries/sh-4-0.bdic",
+      "bytes": 2755632,
+      "sha256": "7d2fb58d3e5791e047d97d85d64714eda583351fcfc9dbe076335af77dd6111c"
+    },
+    {
+      "path": "build/dictionaries/sk-SK-3-0.bdic",
+      "bytes": 1668425,
+      "sha256": "c4ef7e950bda27505c9103cd72abc01cd8d3f1a36d85708b9cc6d8e7dd230547"
+    },
+    {
+      "path": "build/dictionaries/sl-SI-3-0.bdic",
+      "bytes": 2020525,
+      "sha256": "92427a12b6796b043bfb99d39b12ed09b0210ab5ab7dcad31e5b2158a7da17d8"
+    },
+    {
+      "path": "build/dictionaries/sq-3-0.bdic",
+      "bytes": 1645240,
+      "sha256": "b4498e4ccc005fa492d7c9bb35b7c88fa307952342333790bba8f16a4a8b5d7f"
+    },
+    {
+      "path": "build/dictionaries/sr-3-0.bdic",
+      "bytes": 1899637,
+      "sha256": "5a995e3735e341875576d34aa08d96f87ce5d46d4a4ef67be38d0a1c02da4fc5"
+    },
+    {
+      "path": "build/dictionaries/sr-4-0.bdic",
+      "bytes": 3682587,
+      "sha256": "ec2660e14e2799fdcbbe897bde440d382869623efe3e63f844105c4e99921a17"
+    },
+    {
+      "path": "build/dictionaries/sv-SE-3-0.bdic",
+      "bytes": 1487321,
+      "sha256": "1823f1ae5ed2b1568924894d6447c2efa5bd5510cd71cd4bd2e9e251ff367447"
+    },
+    {
+      "path": "build/dictionaries/ta-IN-3-0.bdic",
+      "bytes": 1410211,
+      "sha256": "fa354a4e6b27704b9efeee71ed29b6956f93fb5c6f9bd64df39a4e72fb54c9ce"
+    },
+    {
+      "path": "build/dictionaries/tg-TG-5-0.bdic",
+      "bytes": 1173108,
+      "sha256": "d474ac5e044409d54b394b4b8ffb47e7036884d2d1e22e2832e887f3006e75c9"
+    },
+    {
+      "path": "build/dictionaries/tr-TR-4-0.bdic",
+      "bytes": 9644083,
+      "sha256": "3085511d86a0a3bc65d970ae98c4f89a48d5405148297a5d48fab3c8c85e7f70"
+    },
+    {
+      "path": "build/dictionaries/uk-UA-4-0.bdic",
+      "bytes": 5026833,
+      "sha256": "5f3e32ab6ea931636b3c1fd063678b59768c81113a259058497ba920c6ef645d"
+    },
+    {
+      "path": "build/dictionaries/uk-UA-5-0.bdic",
+      "bytes": 5327186,
+      "sha256": "7c2b48c7bbc6f70bd4d74cb050ee7105848506361f5078b4e574bea3c6089e54"
+    },
+    {
+      "path": "build/dictionaries/vi-VN-3-0.bdic",
+      "bytes": 60036,
+      "sha256": "451ab9d873a39a38a6cabd52f35b4787837a63473d712023c73e59cf9e4a4aca"
+    },
+    {
+      "path": "build/dictionaries/xx-XX-3-0.bdic",
+      "bytes": 1982,
+      "sha256": "b42cd6ba5909f3d723edaaef9a6e738b79da510ad66664fd99ec53f0bc021db3"
+    },
+    {
+      "path": "native/speech-pack/ggml-base.dll",
+      "bytes": 693248,
+      "sha256": "bede0d6b2d387236ecd2b5dd676d51c8984b5b6e0ae461a12174e9c01345c5f0"
+    },
+    {
+      "path": "native/speech-pack/ggml-cpu-alderlake.dll",
+      "bytes": 1009664,
+      "sha256": "d8f5c56ea490394eeae8b271650f2647aecd039a542d6df9e0140726e62a4603"
+    },
+    {
+      "path": "native/speech-pack/ggml-cpu-cannonlake.dll",
+      "bytes": 1049600,
+      "sha256": "74127b40abd4f595d9db6af0fa313a02e18ff42fc228bfa05281e7c788dd4507"
+    },
+    {
+      "path": "native/speech-pack/ggml-cpu-cascadelake.dll",
+      "bytes": 1061376,
+      "sha256": "4b11c427b844eeac87529af9a8d94b35aad2024666beb2a35e59fe3077e4b81e"
+    },
+    {
+      "path": "native/speech-pack/ggml-cpu-haswell.dll",
+      "bytes": 1010688,
+      "sha256": "1306b1014c8118d27234d8ddc0e66ced1f8c8476bf85071595fd182ea9b7263b"
+    },
+    {
+      "path": "native/speech-pack/ggml-cpu-icelake.dll",
+      "bytes": 1061376,
+      "sha256": "2b4dc4c66e7d8fe2807283816e9cf3b7f7d0556f59df34069871e37eab8aed40"
+    },
+    {
+      "path": "native/speech-pack/ggml-cpu-sandybridge.dll",
+      "bytes": 1026560,
+      "sha256": "04edbdebc01a1d421062a960881a4f34d520d99693999518243f332406444c6e"
+    },
+    {
+      "path": "native/speech-pack/ggml-cpu-skylakex.dll",
+      "bytes": 1049600,
+      "sha256": "1774714cf93621406ff35344b54715619a83242ae3e331e44d98a3b35ce801be"
+    },
+    {
+      "path": "native/speech-pack/ggml-cpu-sse42.dll",
+      "bytes": 862720,
+      "sha256": "f060318772c4c2dbac312bbfff6ea700b85dbc502bb38585a7186d06d549301a"
+    },
+    {
+      "path": "native/speech-pack/ggml-cpu-x64.dll",
+      "bytes": 866816,
+      "sha256": "4b4b05caba40d4309b5d710ef74c59ba190516b8489f27bdb1ba11ae33c6e9d3"
+    },
+    {
+      "path": "native/speech-pack/ggml-small-q5_1.bin",
+      "bytes": 190085487,
+      "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb"
+    },
+    {
+      "path": "native/speech-pack/ggml.dll",
+      "bytes": 62464,
+      "sha256": "31fe18616d872af9b6134b47a6dff8072ae4ecbe5df0273f4f8dc36766c9db8e"
+    },
+    {
+      "path": "native/speech-pack/LICENSE.txt",
+      "bytes": 1078,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    {
+      "path": "native/speech-pack/runtime-source.json",
+      "bytes": 127,
+      "sha256": "213af60777fb2710dd968f06f9b67ee9b1682edd1dd211ffb65e95be628e60d5"
+    },
+    {
+      "path": "native/speech-pack/whisper-cli.exe",
+      "bytes": 479744,
+      "sha256": "331dba46d6427105d2b802cdbc7eae916ea1c5abf9b0d3b5cfe460d8db8e4366"
+    },
+    {
+      "path": "native/speech-pack/whisper.dll",
+      "bytes": 1370112,
+      "sha256": "034396d75bb5720c1851674ff64a96192b58f6927b68d334ebd254ce6cad9674"
+    }
+  ]
+}

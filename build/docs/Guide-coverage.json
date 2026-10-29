@@ -1,0 +1,585 @@
+{
+  "version": "0.1.0",
+  "lessons": 47,
+  "tours": 10,
+  "features": [
+    {
+      "lesson": "welcome",
+      "title": "Your first session",
+      "features": [
+        "001",
+        "002",
+        "003",
+        "005",
+        "129"
+      ]
+    },
+    {
+      "lesson": "workspace",
+      "title": "Find your way around",
+      "features": [
+        "008",
+        "009",
+        "010",
+        "011",
+        "012",
+        "015",
+        "016",
+        "017",
+        "021"
+      ]
+    },
+    {
+      "lesson": "views",
+      "title": "Choose a workspace view",
+      "features": [
+        "013",
+        "014"
+      ]
+    },
+    {
+      "lesson": "projects",
+      "title": "Projects and library folders",
+      "features": [
+        "052",
+        "063",
+        "111",
+        "127",
+        "131"
+      ]
+    },
+    {
+      "lesson": "create",
+      "title": "Create a document or card",
+      "features": [
+        "028",
+        "055",
+        "059",
+        "062"
+      ]
+    },
+    {
+      "lesson": "folders",
+      "title": "Folders, chapters and scenes",
+      "features": [
+        "053",
+        "054",
+        "056",
+        "057",
+        "058",
+        "060",
+        "070"
+      ]
+    },
+    {
+      "lesson": "tabs",
+      "title": "Document tabs and reading memory",
+      "features": [
+        "018",
+        "061",
+        "091",
+        "135"
+      ]
+    },
+    {
+      "lesson": "format",
+      "title": "Writing and selection formatting",
+      "features": [
+        "029",
+        "030",
+        "031",
+        "035",
+        "043",
+        "044",
+        "045",
+        "046",
+        "048",
+        "049"
+      ]
+    },
+    {
+      "lesson": "tables",
+      "title": "Tables and checklists",
+      "features": [
+        "036",
+        "037",
+        "038",
+        "039"
+      ]
+    },
+    {
+      "lesson": "images",
+      "title": "Images and web links",
+      "features": [
+        "040",
+        "041",
+        "051"
+      ]
+    },
+    {
+      "lesson": "equations",
+      "title": "Equations and technical text",
+      "features": [
+        "007",
+        "042"
+      ]
+    },
+    {
+      "lesson": "find",
+      "title": "Find and replace in one document",
+      "features": [
+        "032",
+        "033",
+        "034"
+      ]
+    },
+    {
+      "lesson": "focus",
+      "title": "Focus mode and comfortable typography",
+      "features": [
+        "019",
+        "025"
+      ]
+    },
+    {
+      "lesson": "layouts",
+      "title": "Poetry, script, letter and technical layouts",
+      "features": [
+        "004",
+        "006",
+        "142"
+      ]
+    },
+    {
+      "lesson": "comments",
+      "title": "Comments and annotations",
+      "features": [
+        "140"
+      ]
+    },
+    {
+      "lesson": "revisions",
+      "title": "Revision history and passage comparisons",
+      "features": [
+        "107",
+        "136"
+      ]
+    },
+    {
+      "lesson": "compare",
+      "title": "Edit two documents side by side",
+      "features": [
+        "020"
+      ]
+    },
+    {
+      "lesson": "bulk",
+      "title": "Organize several items together",
+      "features": [
+        "071",
+        "137"
+      ]
+    },
+    {
+      "lesson": "batch-replace",
+      "title": "Preview project-wide replacements",
+      "features": [
+        "143",
+        "144"
+      ]
+    },
+    {
+      "lesson": "templates",
+      "title": "Reusable project and document templates",
+      "features": [
+        "138"
+      ]
+    },
+    {
+      "lesson": "properties",
+      "title": "Details, tags and custom properties",
+      "features": [
+        "066",
+        "146"
+      ]
+    },
+    {
+      "lesson": "capture",
+      "title": "Quick capture and Inbox",
+      "features": [
+        "145"
+      ]
+    },
+    {
+      "lesson": "cards",
+      "title": "Knowledge cards and categories",
+      "features": [
+        "072"
+      ]
+    },
+    {
+      "lesson": "links",
+      "title": "Stable links, backlinks and link health",
+      "features": [
+        "073",
+        "074",
+        "075",
+        "076"
+      ]
+    },
+    {
+      "lesson": "board",
+      "title": "Board and drafting stages",
+      "features": [
+        "077",
+        "078"
+      ]
+    },
+    {
+      "lesson": "graph",
+      "title": "Connections graph",
+      "features": [
+        "079",
+        "080",
+        "081"
+      ]
+    },
+    {
+      "lesson": "timeline",
+      "title": "Timeline, events and milestones",
+      "features": [
+        "082",
+        "083"
+      ]
+    },
+    {
+      "lesson": "manuscript",
+      "title": "Manuscript builder and read-through",
+      "features": [
+        "067",
+        "068",
+        "069"
+      ]
+    },
+    {
+      "lesson": "goals",
+      "title": "Writing goals and activity",
+      "features": [
+        "084"
+      ]
+    },
+    {
+      "lesson": "search",
+      "title": "One search across the library",
+      "features": [
+        "099",
+        "100",
+        "101",
+        "102"
+      ]
+    },
+    {
+      "lesson": "research",
+      "title": "Research shelf and source files",
+      "features": [
+        "085"
+      ]
+    },
+    {
+      "lesson": "pdf",
+      "title": "Read, highlight and extract from PDFs",
+      "features": [
+        "086",
+        "087",
+        "088",
+        "089",
+        "090"
+      ]
+    },
+    {
+      "lesson": "ocr",
+      "title": "Search PDF contents and use local OCR",
+      "features": [
+        "092",
+        "147"
+      ]
+    },
+    {
+      "lesson": "references",
+      "title": "Reference records and Zotero imports",
+      "features": [
+        "093",
+        "096"
+      ]
+    },
+    {
+      "lesson": "citations",
+      "title": "Linked citations and full CSL formatting",
+      "features": [
+        "094",
+        "095",
+        "097"
+      ]
+    },
+    {
+      "lesson": "notes",
+      "title": "Footnotes and endnotes",
+      "features": [
+        "141"
+      ]
+    },
+    {
+      "lesson": "dictation",
+      "title": "Free offline speech-to-text",
+      "features": [
+        "149",
+        "150",
+        "151",
+        "152"
+      ]
+    },
+    {
+      "lesson": "imports",
+      "title": "Import writing and an Atlas library",
+      "features": [
+        "114",
+        "115",
+        "116"
+      ]
+    },
+    {
+      "lesson": "exports",
+      "title": "Export one draft or collected writing",
+      "features": [
+        "117",
+        "118",
+        "119",
+        "120",
+        "121",
+        "122",
+        "123"
+      ]
+    },
+    {
+      "lesson": "presets",
+      "title": "Save export and print presets",
+      "features": [
+        "124"
+      ]
+    },
+    {
+      "lesson": "saving",
+      "title": "Autosave, conflicts and safe closing",
+      "features": [
+        "103",
+        "104",
+        "105",
+        "106",
+        "130"
+      ]
+    },
+    {
+      "lesson": "backup",
+      "title": "Backup health, preview and restoration",
+      "features": [
+        "108",
+        "109",
+        "110",
+        "112"
+      ]
+    },
+    {
+      "lesson": "trash",
+      "title": "Trash, restore and archive",
+      "features": [
+        "064",
+        "065"
+      ]
+    },
+    {
+      "lesson": "themes",
+      "title": "Themes, animation and panel preferences",
+      "features": [
+        "022",
+        "023",
+        "024",
+        "026"
+      ]
+    },
+    {
+      "lesson": "language",
+      "title": "Language, RTL and accessibility",
+      "features": [
+        "027",
+        "047",
+        "050",
+        "148"
+      ]
+    },
+    {
+      "lesson": "shortcuts",
+      "title": "Keyboard reference",
+      "features": []
+    },
+    {
+      "lesson": "troubleshooting",
+      "title": "Troubleshooting and known limits",
+      "features": [
+        "126",
+        "128",
+        "132",
+        "133",
+        "134"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "overview",
+      "lessons": [
+        "workspace",
+        "create",
+        "views",
+        "properties",
+        "search",
+        "saving"
+      ]
+    },
+    {
+      "id": "foundations",
+      "lessons": [
+        "welcome",
+        "projects",
+        "folders",
+        "tabs",
+        "capture",
+        "templates",
+        "bulk",
+        "properties"
+      ]
+    },
+    {
+      "id": "writing",
+      "lessons": [
+        "format",
+        "tables",
+        "images",
+        "equations",
+        "find",
+        "focus",
+        "layouts",
+        "dictation"
+      ]
+    },
+    {
+      "id": "revision",
+      "lessons": [
+        "comments",
+        "revisions",
+        "compare",
+        "batch-replace"
+      ]
+    },
+    {
+      "id": "planning",
+      "lessons": [
+        "cards",
+        "links",
+        "board",
+        "graph",
+        "timeline",
+        "manuscript",
+        "goals"
+      ]
+    },
+    {
+      "id": "research",
+      "lessons": [
+        "research",
+        "pdf",
+        "ocr",
+        "references",
+        "citations",
+        "notes"
+      ]
+    },
+    {
+      "id": "publishing",
+      "lessons": [
+        "imports",
+        "presets",
+        "exports"
+      ]
+    },
+    {
+      "id": "protection",
+      "lessons": [
+        "saving",
+        "backup",
+        "trash",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "personal",
+      "lessons": [
+        "themes",
+        "language",
+        "shortcuts",
+        "search"
+      ]
+    },
+    {
+      "id": "complete",
+      "lessons": [
+        "welcome",
+        "workspace",
+        "views",
+        "projects",
+        "create",
+        "folders",
+        "tabs",
+        "format",
+        "tables",
+        "images",
+        "equations",
+        "find",
+        "focus",
+        "layouts",
+        "comments",
+        "revisions",
+        "compare",
+        "bulk",
+        "batch-replace",
+        "templates",
+        "properties",
+        "capture",
+        "cards",
+        "links",
+        "board",
+        "graph",
+        "timeline",
+        "manuscript",
+        "goals",
+        "search",
+        "research",
+        "pdf",
+        "ocr",
+        "references",
+        "citations",
+        "notes",
+        "dictation",
+        "imports",
+        "exports",
+        "presets",
+        "saving",
+        "backup",
+        "trash",
+        "themes",
+        "language",
+        "shortcuts",
+        "troubleshooting"
+      ]
+    }
+  ]
+}

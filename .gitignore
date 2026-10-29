@@ -1,0 +1,11 @@
+node_modules/
+dist/
+release/
+native/speech-pack/
+qa-*
+qa/
+tests/.tmp/
+*.log
+.env*
+!.env.example
+

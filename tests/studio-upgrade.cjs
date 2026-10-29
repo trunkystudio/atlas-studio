@@ -1,0 +1,25 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {_electron}=require('playwright-core');
+const {seed}=require('../electron/store.cjs');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'qa-upgrade');
+const data=path.join(out,'legacy-'+Date.now());fs.mkdirSync(path.join(data,'Library'),{recursive:true});
+const original=seed();delete original.settings.onboardingVersion;original.settings.atlasThemeVersion=1;
+original.docs[0].title='My existing manuscript';original.docs[0].html='<p>Existing work remains mine.</p>';original.docs[0].text='Existing work remains mine.';
+fs.writeFileSync(path.join(data,'Library/library.json'),JSON.stringify(original,null,2));
+let app;
+(async()=>{try{
+ const env={...process.env,FOLIO_DATA_DIR:data,FOLIO_TEST_MODE:'1'};delete env.ELECTRON_RUN_AS_NODE;
+ app=await _electron.launch({executablePath:process.env.STUDIO_TEST_EXE||path.join(root,'node_modules/electron/dist/electron.exe'),args:process.env.STUDIO_TEST_EXE?[]:[root],env,timeout:45000});
+ const page=await app.firstWindow();const cdp=await page.context().newCDPSession(page);await cdp.send('Emulation.setFocusEmulationEnabled',{enabled:true});
+ await page.getByRole('button',{name:'Continue with my existing library',exact:true}).click();
+ await page.getByLabel('Workspace view',{exact:true}).waitFor();
+ const loaded=await page.evaluate(()=>window.folio.load());
+ assert.deepEqual(loaded.state.docs,original.docs.map((doc,order)=>({...doc,order})));assert.deepEqual(loaded.state.projects,original.projects);
+ assert.equal(loaded.state.settings.onboardingVersion,2);
+ await page.locator('.tree-open').filter({hasText:'My existing manuscript'}).click();
+ assert((await page.locator('.editor-pane .tiptap').innerText()).includes('Existing work remains mine.'));
+ await page.keyboard.press('Control+s');await page.waitForFunction(()=>document.querySelector('.save-status')?.textContent.includes('Saved locally'));
+ const closed=page.waitForEvent('close');await page.getByRole('button',{name:'Close window',exact:true}).click();await closed;
+ fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({passed:['An existing library opens without a tutorial or document loss','Legacy projects, document IDs and contents remain intact','Native window close waits for saving and exits'],installed:process.env.STUDIO_TEST_EXE||null},null,2));
+ console.log('PASS Existing library upgrade, document preservation and saved window close');
+ }catch(e){console.error(e);process.exitCode=1;}finally{if(app)await app.close().catch(()=>{});}})();
