@@ -8,7 +8,7 @@ const {_electron}=require('playwright-core'),{seed}=require('../electron/store.c
  fs.writeFileSync(path.join(data,'Library/library.json'),JSON.stringify(state));
  let app;try{
   const env={...process.env,FOLIO_DATA_DIR:data,FOLIO_TEST_MODE:'1'};delete env.ELECTRON_RUN_AS_NODE;
-  app=await _electron.launch({args:[root],env,timeout:45000});const page=await app.firstWindow(),errors=[];
+  app=await _electron.launch({executablePath:process.env.STUDIO_TEST_EXE||path.join(root,'node_modules/electron/dist/electron.exe'),args:process.env.STUDIO_TEST_EXE?[]:[root],env,timeout:45000});const page=await app.firstWindow(),errors=[];
   page.setDefaultTimeout(15000);page.on('pageerror',e=>errors.push(e.message));
   await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].showInactive());
   await(await page.context().newCDPSession(page)).send('Emulation.setFocusEmulationEnabled',{enabled:true});
