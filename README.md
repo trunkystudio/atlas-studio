@@ -121,3 +121,9 @@ Delivered validation and feature-inventory reports distinguish passed workflows,
 ## Community and support
 
 Bug reports, improvement suggestions and pull requests are welcome. Accepted changes will be considered for future updates; no implementation date is guaranteed. See [Contributing](CONTRIBUTING.md) and [Support development](SUPPORT.md).
+
+## Updated 0.1 build
+
+This refreshed 0.1 installer includes an optional live document outline, heading-level warnings, outline collapsing, sibling section moves with Undo, recent workspace locations, keyboard/mouse Back and Forward, clearer backup health, three paste modes, safe pasted HTML and comment-anchor handling, headings 1–6, and accurate Undo/Redo availability. The offline guide explains these controls.
+
+This remains version 0.1 (package version 0.1.0). The broader advancement roadmap is ongoing; this refresh does not claim that every planned feature is complete.
