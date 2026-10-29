@@ -234,13 +234,15 @@ Format a passage without a crowded permanent ribbon.
 
 **Where:** Writing editor; toolbar near selected text
 
-1. Choose Outline in the editor toolbar to show headings. Select a heading to place the cursor there. A warning marks skipped heading levels. Collapse hides descendant headings in the outline, without hiding or changing the writing.
-2. Hover or focus an outline row for Move up/down controls. A move includes its text, images and all subsections, and can be undone in one step. Moves stay among sibling headings; headings nested inside tables or lists cannot be moved here.
-3. Click the draft and type. Select a passage to reveal bold, italic, underline, highlight, comment, link and list controls beside it.
-4. Use Paragraph style above the editor for paragraph or heading levels 1–3. Headings also build the outline in document details.
-5. Use Insert for bullet/numbered lists, checklists, quotes, code blocks, dividers, tables, images, links and equations.
-6. Use Ctrl B / Ctrl I for common formatting and the undo/redo buttons for editor changes. Word and character counts appear below the draft.
-7. Right-click a misspelled word for local suggestions or Add to personal dictionary. Set the language in Language & accessibility.
+1. In Preferences, choose Default paste behavior: keep supported source formatting, match formatting at the cursor, or plain text. Match preserves ordinary emphasis at the cursor without copying links or comment anchors. Plain text preserves paragraph breaks and literal characters. Ctrl Shift V overrides the preference for one plain-text paste. Code-block pastes remain literal.
+2. Keep formatting retains supported tables, images and emphasis; unsupported source fonts/layouts may be normalized by the editor. Comment anchors are not copied. Paste can be undone independently. Use Paragraph style for headings 1 through 6; Undo and Redo are disabled when no operation is available.
+3. Choose Outline in the editor toolbar to show headings. Select a heading to place the cursor there. A warning marks skipped heading levels. Collapse hides descendant headings in the outline, without hiding or changing the writing.
+4. Hover or focus an outline row for Move up/down controls. A move includes its text, images and all subsections, and can be undone in one step. Moves stay among sibling headings; headings nested inside tables or lists cannot be moved here.
+5. Click the draft and type. Select a passage to reveal bold, italic, underline, highlight, comment, link and list controls beside it.
+6. Use Paragraph style above the editor for paragraph or heading levels 1–3. Headings also build the outline in document details.
+7. Use Insert for bullet/numbered lists, checklists, quotes, code blocks, dividers, tables, images, links and equations.
+8. Use Ctrl B / Ctrl I for common formatting and the undo/redo buttons for editor changes. Word and character counts appear below the draft.
+9. Right-click a misspelled word for local suggestions or Add to personal dictionary. Set the language in Language & accessibility.
 
 **What you should see:** Your draft has readable structure with formatting close to the text.
 

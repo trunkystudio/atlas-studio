@@ -39,3 +39,11 @@ Verification: 63 unit checks passed, production build succeeded, and isolated El
 - Updated existing offline lessons and both generated user guides.
 - Validation: 64 unit tests; production build; isolated Electron checks for live heading updates, collapse/expand, section movement/Undo, recent locations, and mouse navigation; existing full desktop regression suite passed.
 - Installer/release 0.1 remains unchanged. Remaining roadmap items are still open, including editor text folding, export preflight, saved layouts, deeper review/research, backup scheduling, performance, accessibility and updates.
+
+## Quality pass — paste and formatting
+
+Implemented: keep supported formatting / match cursor formatting / plain-text paste preferences; Ctrl Shift V plain-text override; literal code-block pastes; independent paste Undo; sanitization of rich paste and removal of copied comment anchors; headings 1–6 reflected correctly, selecting the same heading no longer toggles it to a paragraph; Undo/Redo availability and selection-formatting pressed states.
+
+Verified: 67 unit tests, production build, isolated Electron editor checks, outline/navigation checks, and the existing desktop regression suite. Desktop checks exercised live preference changes, plain/match/rich paste, literal text and paragraph breaks, script sanitization, copied-comment removal, Ctrl Shift V override, exact Undo, repeated heading-6 selection and saved preferences. No real writing library was used.
+
+Still open: captions/alt text and image sizing, table UX, undo continuity across tab switches, export preflight and the remaining roadmap. Source formatting is limited to editor-supported content; match/plain modes use the clipboard text representation. These changes are in development, not a claim of perfection or a newly installed release.
