@@ -11,7 +11,8 @@ Invoke-WebRequest $atlasRuntime.url -OutFile $atlasArchive
 if ((Get-FileHash $atlasArchive -Algorithm SHA256).Hash.ToLowerInvariant() -ne $atlasRuntime.archiveSHA256) { throw 'Runtime checksum mismatch' }
 Expand-Archive -LiteralPath $atlasArchive -DestinationPath (Join-Path $atlasTemp 'runtime')
 Copy-Item -LiteralPath (Join-Path $atlasRoot 'build/speech-runtime-source.json') -Destination (Join-Path $atlasTarget 'runtime-source.json')
-foreach ($atlasFile in $atlasManifest.files | Where-Object { $_.path -like 'native/speech-pack/*' -and $_.path -notlike '*.bin' -and $_.path -notlike '*/runtime-source.json' }) {
+Copy-Item -LiteralPath (Join-Path $atlasRoot 'build/speech-runtime-LICENSE.txt') -Destination (Join-Path $atlasTarget 'LICENSE.txt')
+foreach ($atlasFile in $atlasManifest.files | Where-Object { $_.path -like 'native/speech-pack/*' -and $_.path -notlike '*.bin' -and $_.path -notlike '*/runtime-source.json' -and $_.path -notlike '*/LICENSE.txt' }) {
     $atlasName = Split-Path $atlasFile.path -Leaf
     $atlasSource = @(Get-ChildItem (Join-Path $atlasTemp 'runtime') -Recurse -File | Where-Object { $_.Name -eq $atlasName })
     if ($atlasSource.Count -ne 1) { throw "Missing or ambiguous runtime file: $atlasName" }
