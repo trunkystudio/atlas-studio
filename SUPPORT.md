@@ -1,5 +1,7 @@
 # Support Atlas Studio
 
-Optional contributions support ongoing Atlas Studio development and maintenance. Support is voluntary and does not purchase priority, a feature promise or influence over acceptance of reports.
+[Support Atlas Studio development on Ko-fi](https://ko-fi.com/trunkystudio).
 
-A verified payment link will be added after the maintainer configures the receiving account. No payments can currently be collected through this repository.
+Support is optional and helps ongoing development and maintenance. It does not purchase priority, a feature promise or influence over acceptance of reports.
+
+Atlas Studio does not handle payment details. The support link opens Ko-fi in your browser; using the app never requires a donation.
